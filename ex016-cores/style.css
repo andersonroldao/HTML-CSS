@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+* { /* Configurações globais das CSS */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { /*ex: radio-gradient(to bottom, to right, to 45dag, to -45dag, cores e % das cores)*/
+        background-image: linear-gradient(to bottom, #fc97ad8e, #deaa856d);
+        background-attachment: fixed;      
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #d0778a62;
+    width: 85%;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    color: rgb(247, 207, 105);
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(128, 120, 60);
+}
+
+h2 {
+    color: rgba(226, 126, 3, 0.837);
+}
+
+p {
+    text-align: justify;    
+}
+
+        
+

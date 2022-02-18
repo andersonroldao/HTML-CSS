@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'idroid';
+    src: url(fonts/Fonts/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #E7E4C1;
+    margin: auto;
+}
+
+header {
+    background-image: linear-gradient(to top, #1A5C38, #3DDA84);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    margin: -21px 0 -16px 0;
+}
+
+header>p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header>h1 {
+    padding: 40px;
+}
+
+nav {
+    background-color: #1A5C38;
+    padding: 5px 10px;
+}
+
+nav>a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fcfcfcb4;
+}
+
+nav>a:hover {
+    background-color: #1C38;
+    border-radius: 5px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 1px 10px;
+}
+
+article>p {
+    text-align: justify;
+}
+
+article>h1 {
+    font: 2em 'idroid', Arial, sans-serif;
+    color: #1A5C38;
+}
+
+h2 {
+    background-image: linear-gradient(to right, #3dda8462, white);
+    font: 1.5em 'idroid', Arial, sans-serif;
+    color: #1A5C38;
+    padding: 0 5px;
+}
+
+h3 {
+    background-color: #186038;
+    color: white;
+}
+
+.center {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.left {
+    text-align: left;
+}
+
+li {
+    width: 1150px;
+    float: left;
+    background: #999;
+}
+
+section#aprenderMais {
+    background-color: #3dda8462;
+    border: 5px 5px 5px 5px;
+}
+
+.links {
+    background-color: #3dda8462;
+    color: #1A5C38;
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.corVerde {
+    color: #1A5C38;
+}
+
+.links_aprenderMais {
+    color: #1A5C38;
+    text-decoration: none;
+}
+
+.links_aprenderMais:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1A5C38;
+    text-align: center;
+    color: white;
+}
+
+    @media (max-width: 480px) {
+        .center {
+            background: url(imagens/dan-droids-pq.png);
+            width: 50%;
+            height: 50%;
+        }
+    }
