@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            height: 450px;
+            width: 97vw;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit distinctio doloribus nisi eos
+        voluptate! Labore, voluptatem ab non, modi repudiandae similique aut beatae nihil maxime at ipsum ipsa. Est.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos, ut eum officia fugit pariatur sapiente
+        incidunt totam placeat qui hic facere voluptatum eius molestias eaque. Nisi fugiat eos facere?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odit voluptatum, ex voluptas temporibus unde
+        saepe consequatur autem iure, reprehenderit cumque! Pariatur dignissimos temporibus delectus voluptatum nobis
+        veritatis reiciendis ea.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro error dicta voluptas beatae inventore! Provident officia eligendi qui, harum dolorem ipsum atque molestiae nemo magnam voluptatibus asperiores accusantium, beatae repudiandae!</p><img src='imagens/cursoemvideo.png' alt='logo do curso em video'> " frameborder="1">
+        <p>Infelixmente seu navegador não é compatível com isso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ratione nihil, optio architecto accusantium rerum
+        odio neque accusamus veritatis provident facere sed aut. Placeat laboriosam reiciendis et, similique eveniet
+        sequi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, veritatis dolores. Facilis earum nostrum, ea
+        voluptatum distinctio repudiandae alias deleniti nesciunt saepe, hic cum sequi tempora et. Minima, possimus
+        quis?</p>
+
+</body>
+</html>
