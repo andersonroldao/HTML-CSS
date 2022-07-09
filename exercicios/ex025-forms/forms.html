@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+    <form action="cadastro.js">
+        <!-- Label serve para a área de click do formulário abranger a caixa e o texto -->
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="lastname" id="isobrenome">
+        </p>
+
+        <p>
+            <input type="submit" name="submit" id="isubmit" onclick="enviar()">
+        </p>
+    </form>
+
+    <script src="cadastro.js">
+        
+    </script>
+
+</body>
+</html>
