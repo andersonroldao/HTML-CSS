@@ -24,7 +24,8 @@
                 <p>
                     <label for="email">E-mail: </label>
                     <input type="email" name="email" id="email" placeholder="Digite seu E-mail" autocomplete="email"
-                        required size="25" maxlength="50" onblur="validacaoEmail(f1.email)">
+                        required size="25" maxlength="50" onblur="validacaoEmail(f1.email)"
+                        pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z0-9]{2,4}$">
                 </p>
                 <p>
                     <label for="tel">Telefone: </label>
@@ -37,7 +38,7 @@
                 <input type="reset" value="Limpar">
             </p>
         </form>
-        <div id="msg">
+        <div id="res">
 
         </div>
     </section>
@@ -50,7 +51,7 @@
         let nome = document.getElementById('name')
         let email = document.getElementById('email')
         let tel = document.getElementById('tel')
-        let msg = document.getElementById('msg')
+        let msg = document.getElementById('res')
 
         function validacaoEmail(field) {
             let usuario = field.value.substring(0, field.value.indexOf("@"))
@@ -64,19 +65,22 @@
                 dominio.search(" ") == -1 &&
                 dominio.search(".") != -1 &&
                 dominio.indexOf(".") >= 1 &&
-                dominio.lastIndexOf(".") < dominio.length - 1) {
+                dominio.lastIndexOf(".") < dominio.length - 2) {
+                res.innerHTML = ""
             } else {
-                msg.innerHTML = `<p><font color="red">E-mail inválido</font></p>`
+                res.innerHTML = `<p><font color="red">E-mail inválido.</font></p>`
             }
         }
 
         function enviar() {
             if (nome.value.length >= 5 &&
-                tel.value.length >= 8) {
+                tel.value.length >= 8 &&
+                res.innerHTML.length == 0) {
                 alert(`${nome.value}, cadastro enviado com sucesso.`)
+            } else {
+                res.innerHTML = `<p><font color="red">Dados inválidos.</font></p>`
             }
         }
-
     </script>
 </body>
 </html>
