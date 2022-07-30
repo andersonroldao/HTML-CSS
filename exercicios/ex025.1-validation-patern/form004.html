@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Formulário</h1>
+    </header>
+
+    <section>
+        <form action="" name="f1" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="name">Nome: </label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu Nome Completo" autocomplete="name"
+                        required size="25" minlength="5" maxlength="40">
+                </p>
+                <p>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail" autocomplete="email"
+                        required size="25" maxlength="50" onblur="validacaoEmail(f1.email)" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z0-9]{2,4}$">
+                </p>
+                <p>
+                    <label for="tel">Telefone: </label>
+                    <input type="tel" name="tel" id="tel" placeholder="Digite seu Telefone com DDD" autocomplete="tel"
+                        required size="23" minlength="8" maxlength="15">
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar" onclick="enviar()">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+        <div id="res">
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy andersonRoldão</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
