@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="" autocomplete="on">
+        <p>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Digite o nome completo do aluno" required
+                autocomplete="name" size="25" minlength="5" maxlength="40">
+        </p>
+        <p>
+            <label for="media">Média: </label>
+            <input type="number" name="media" id="media" placeholder="0 a 10" required min="0" max="10" step="0.1">
+        </p>
+        <p>
+            <label for="month">Período Letivo: </label>
+            <input type="month" name="month" id="month" required>
+        </p>
+        <p>
+            <label for="day">Dia da Prova: </label>
+            <input type="date" name="day" id="day" required>
+        </p>
+        <p>
+            <label for="hora">Horário da Prova: </label>
+            <input type="time" name="hora" id="hora" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar" onclick="enviar()">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <div>
+
+    </div>
+
+    <script>
+        let nome = document.getElementById('nome')
+        let media = document.getElementById('media')
+        let month = document.getElementById('month')
+        let day = document.getElementById('day')
+        let hora = document.getElementById('hora')
+
+        function enviar() {
+            if (nome.value.length >= 5 && media.value.length != 0 && month.value != 0 && day.value != 0) {
+                alert(`Nota do Aluno: ${nome.value}, enviada com sucesso.`)
+            }
+        }
+    </script>
+</body>
+</html>
