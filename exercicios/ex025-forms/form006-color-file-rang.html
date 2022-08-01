@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: rgb(55, 111, 196);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            margin: 12px;
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            color: black;
+            width: 320px;
+            margin: auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
+        }
+
+        p#recuo {
+            margin: 10px 10px 0 10px;
+        }
+
+        footer {
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Formulário</h1>
+    </header>
+
+    <section>
+        <div>
+            <form action="">
+                <fieldset>
+                    <p>
+                        <label for="color">Cor: </label>
+                        <input type="color" name="color" id="color">
+                    </p>
+                    <p>
+                        <label for="nsatisfacao">Nível de Satisfação: </label>
+                        <input type="range" name="nsatisfacao" id="nsatisfacao" value="5" min="1" max="5">
+                    </p>
+                    <p>
+                        <input type="file" name="foto" id="foto">
+                    </p>
+                </fieldset>
+                <p id="recuo">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+
+        <div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy andersonRoldão</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
