@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: rgb(55, 111, 196);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            color: black;
+            width: 55vw;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
+        }
+
+        fieldset {
+            margin: 2px 2px 10px 2px;
+        }
+
+        input {
+            margin: 2px;
+        }
+
+        footer {
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Formulário</h1>
+    </header>
+
+    <section>
+        <div>
+            <form action="">
+                <fieldset id="genero">
+                    <legend>Gênero</legend>
+                    <p>
+                        <input type="radio" name="masculino" id="masculino">
+                        <label for="masculino"> Masculino</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="feminino" id="feminino">
+                        <label for="feminino"> Feminino</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Esportes Favoritos</legend>
+                    <p>
+                        <input type="checkbox" name="basquete" id="basquete">
+                        <label for="basquete"> Basquete</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="futebol" id="futebol">
+                        <label for="futebol"> Futebol</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="natacao" id="natacao">
+                        <label for="natacao"> Natação</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="tenis" id="tenis">
+                        <label for="tenis"> Tênis</label>
+                    </p>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+
+        <div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy andersonRoldão</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
