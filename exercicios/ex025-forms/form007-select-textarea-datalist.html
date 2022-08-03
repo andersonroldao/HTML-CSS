@@ -28,6 +28,14 @@
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
         }
 
+        div {
+            margin: 10px 0 10px 0;
+        }
+
+        div#recuo {
+            margin: 20px 0px 10px 10px;
+        }
+
         footer {
             font-style: italic;
             text-align: center;
@@ -42,7 +50,7 @@
     <section>
         <div>
             <form action="" autocomplete="on">
-                <p>
+                <div>
                     <label for="estado">Estado: </label>
                     <select id="estado" name="estado">
                         <option value="" selected>--- Estados ---</option>
@@ -77,8 +85,8 @@
                         <option value="TO">Tocantins</option>
                         <option value="EX">Estrangeiro</option>
                     </select>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label for="profissao">Profissão: </label>
                     <input type="text" name="profissao" id="profissao" list="listprofissao">
                     <datalist id="listprofissao">
@@ -87,13 +95,15 @@
                         <option value="Desenvolvedor"></option>
                         <option value="Professor"></option>
                     </datalist>
-                </p>
+                </div>
 
-                <p><label for="textarea">Mensagem:</label></p>
-                <p><textarea name="textarea" id="textarea" cols="30" rows="10"></textarea></p>
+                <div><label for="textarea">Mensagem:</label></div>
+                <div><textarea name="textarea" id="textarea" cols="30" rows="10"></textarea></div>
 
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
+                <div id="recuo">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
 
             </form>
         </div>
