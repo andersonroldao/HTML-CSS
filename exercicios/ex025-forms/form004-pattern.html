@@ -16,27 +16,27 @@
         <form action="" name="f1" autocomplete="on">
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <p>
+                <div>
                     <label for="name">Nome: </label>
                     <input type="text" name="name" id="name" placeholder="Digite seu Nome Completo" autocomplete="name"
                         required size="25" minlength="5" maxlength="40">
-                </p>
-                <p>
+                </div>
+                <div>
                     <label for="email">E-mail: </label>
                     <input type="email" name="email" id="email" placeholder="Digite seu E-mail" autocomplete="email"
                         required size="25" maxlength="50" onblur="validacaoEmail(f1.email)"
                         pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z0-9]{2,4}$">
-                </p>
-                <p>
+                </div>
+                <div>
                     <label for="tel">Telefone: </label>
                     <input type="tel" name="tel" id="tel" placeholder="Digite seu Telefone com DDD" autocomplete="tel"
                         required size="23" minlength="8" maxlength="15">
-                </p>
+                </div>
             </fieldset>
-            <p>
+            <div id="submit">
                 <input type="submit" value="Enviar" onclick="enviar()">
                 <input type="reset" value="Limpar">
-            </p>
+            </div>
         </form>
         <div id="res">
 
