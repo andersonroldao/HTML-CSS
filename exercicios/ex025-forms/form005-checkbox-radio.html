@@ -31,8 +31,12 @@
             margin: 2px 2px 10px 2px;
         }
 
-        input {
-            margin: 2px;
+        div {
+            margin: 10px 0 10px 0;
+        }
+
+        div#recuo {
+            margin: 20px 0 10px 10px;
         }
 
         footer {
@@ -47,48 +51,42 @@
     </header>
 
     <section>
-        <div>
-            <form action="">
-                <fieldset id="genero">
-                    <legend>Gênero</legend>
-                    <p>
-                        <input type="radio" name="masculino" id="masculino">
-                        <label for="masculino"> Masculino</label>
-                    </p>
-                    <p>
-                        <input type="radio" name="feminino" id="feminino">
-                        <label for="feminino"> Feminino</label>
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Esportes Favoritos</legend>
-                    <p>
-                        <input type="checkbox" name="basquete" id="basquete">
-                        <label for="basquete"> Basquete</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="futebol" id="futebol">
-                        <label for="futebol"> Futebol</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="natacao" id="natacao">
-                        <label for="natacao"> Natação</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="tenis" id="tenis">
-                        <label for="tenis"> Tênis</label>
-                    </p>
-                </fieldset>
-                <p>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </p>
-            </form>
-        </div>
-
-        <div>
-
-        </div>
+        <form action="">
+            <fieldset id="genero">
+                <legend>Gênero</legend>
+                <div>
+                    <input type="radio" name="masculino" id="masculino">
+                    <label for="masculino"> Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" name="feminino" id="feminino">
+                    <label for="feminino"> Feminino</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <div>
+                    <input type="checkbox" name="basquete" id="basquete">
+                    <label for="basquete"> Basquete</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="futebol" id="futebol">
+                    <label for="futebol"> Futebol</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="natacao" id="natacao">
+                    <label for="natacao"> Natação</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="tenis" id="tenis">
+                    <label for="tenis"> Tênis</label>
+                </div>
+            </fieldset>
+            <div id="recuo">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
     </section>
 
     <footer>
