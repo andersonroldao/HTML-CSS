@@ -28,8 +28,12 @@
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
         }
 
-        p#recuo {
-            margin: 10px 10px 0 10px;
+        div {
+            margin: 10px 0 10px 0;
+        }
+
+        div#recuo {
+            margin: 20px 0px 10px 10px;
         }
 
         footer {
@@ -44,31 +48,25 @@
     </header>
 
     <section>
-        <div>
-            <form action="">
-                <fieldset>
-                    <p>
-                        <label for="color">Cor: </label>
-                        <input type="color" name="color" id="color">
-                    </p>
-                    <p>
-                        <label for="nsatisfacao">Nível de Satisfação: </label>
-                        <input type="range" name="nsatisfacao" id="nsatisfacao" value="5" min="1" max="5">
-                    </p>
-                    <p>
-                        <input type="file" name="foto" id="foto">
-                    </p>
-                </fieldset>
-                <p id="recuo">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </p>
-            </form>
-        </div>
-
-        <div>
-
-        </div>
+        <form action="">
+            <fieldset>
+                <div>
+                    <label for="color">Cor: </label>
+                    <input type="color" name="color" id="color">
+                </div>
+                <div>
+                    <label for="nsatisfacao">Nível de Satisfação: </label>
+                    <input type="range" name="nsatisfacao" id="nsatisfacao" value="5" min="1" max="5">
+                </div>
+                <div>
+                    <input type="file" name="foto" id="foto">
+                </div>
+            </fieldset>
+            <div id="recuo">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
     </section>
 
     <footer>
