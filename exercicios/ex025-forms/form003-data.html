@@ -5,40 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body {
+            background-color: rgb(55, 111, 196);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            color: black;
+            width: 55vw;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
+        }
+
+        fieldset {
+            margin: 2px 2px 10px 2px;
+        }
+
+        div {
+            margin: 10px 0 10px 10px;
+        }
+
+        footer {
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Teste de Formulário</h1>
-    <form action="" autocomplete="on">
-        <p>
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" placeholder="Digite o nome completo do aluno" required
-                autocomplete="name" size="25" minlength="5" maxlength="40">
-        </p>
-        <p>
-            <label for="media">Média: </label>
-            <input type="number" name="media" id="media" placeholder="0 a 10" required min="0" max="10" step="0.1">
-        </p>
-        <p>
-            <label for="month">Período Letivo: </label>
-            <input type="month" name="month" id="month" required>
-        </p>
-        <p>
-            <label for="day">Dia da Prova: </label>
-            <input type="date" name="day" id="day" required>
-        </p>
-        <p>
-            <label for="hora">Horário da Prova: </label>
-            <input type="time" name="hora" id="hora" required>
-        </p>
-        <p>
-            <input type="submit" value="Enviar" onclick="enviar()">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+    <header>
+        <h1>Teste de Formulário</h1>
+    </header>
 
-    <div>
-
-    </div>
+    <section>
+        <form action="" autocomplete="on">
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome completo do aluno" required
+                    autocomplete="name" size="25" minlength="5" maxlength="40">
+            </div>
+            <div>
+                <label for="media">Média: </label>
+                <input type="number" name="media" id="media" placeholder="0 a 10" required min="0" max="10" step="0.1">
+            </div>
+            <div>
+                <label for="month">Período Letivo: </label>
+                <input type="month" name="month" id="month" required>
+            </div>
+            <div>
+                <label for="day">Dia da Prova: </label>
+                <input type="date" name="day" id="day" required>
+            </div>
+            <div>
+                <label for="hora">Horário da Prova: </label>
+                <input type="time" name="hora" id="hora" required>
+            </div>
+            <div>
+                <input type="submit" value="Enviar" onclick="enviar()">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </section>
 
     <script>
         let nome = document.getElementById('nome')
