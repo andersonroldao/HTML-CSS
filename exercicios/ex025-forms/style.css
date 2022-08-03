@@ -16,6 +16,14 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
 }
 
+div {
+    margin: 10px 0 10px 0;
+}
+
+div#submit {
+    margin-top: 20px;
+}
+
 footer {
     font-style: italic;
 }
