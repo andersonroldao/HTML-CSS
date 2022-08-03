@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: rgb(55, 111, 196);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            margin: 12px;
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            color: black;
+            width: 55vw;
+            margin: auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
+        }
+
+        div {
+            margin: 10px 0 10px 0;
+        }
+
+        div#recuo {
+            margin: 20px 0px 10px 10px;
+        }
+
+        footer {
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Formulário</h1>
+    </header>
+
+    <section>
+        <form action="" autocomplete="on">
+            <div>
+                <label for="num1">Número 1: </label>
+                <input type="number" name="num1" id="num1" required
+                    oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+            </div>
+            <div>
+                <label for="num2">Número 2: </label>
+                <input type="number" name="num2" id="num2" required
+                    oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+            </div>
+            <div>
+                <label for="soma">Soma: </label>
+                <output name="soma" id="soma">0</output>
+            </div>
+            <div>
+                <label for="range">Número: </label>
+                <input type="range" name="range" id="range" min="1" max="5" value="5" oninput="valor.innerHTML = Number(range.value) ">
+                <output id="valor">5</output>
+            </div>
+            <div>
+                <label for="nasc">Data de Nascimento: </label>
+                <input type="number" name="nasc" id="nasc" min="1900" value="2000" oninput="calcIdade()">
+            </div>
+            <div>
+                <output id="idade"></output>
+            </div>
+            <div id="recuo">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy andersonRoldão</p>
+    </footer>
+
+    <script>
+        function calcIdade() {
+            let ano = new Date().getFullYear()
+            let resultado = Number(ano) - Number(nasc.value)
+
+            idade.innerHTML = `Sua idade é: ${resultado}`
+        }
+    </script>
+</body>
+</html>
