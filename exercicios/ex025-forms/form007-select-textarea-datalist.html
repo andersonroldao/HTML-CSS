@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: rgb(55, 111, 196);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            margin: 12px;
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            color: black;
+            width: 320px;
+            margin: auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
+        }
+
+        footer {
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Formulário</h1>
+    </header>
+
+    <section>
+        <div>
+            <form action="" autocomplete="on">
+                <p>
+                    <label for="estado">Estado: </label>
+                    <select id="estado" name="estado">
+                        <option value="" selected>--- Estados ---</option>
+                        <optgroup label="Regiões que começam com 'A' ">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                        </optgroup>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="profissao">Profissão: </label>
+                    <input type="text" name="profissao" id="profissao" list="listprofissao">
+                    <datalist id="listprofissao">
+                        <option value="Administrador"></option>
+                        <option value="Contador"></option>
+                        <option value="Desenvolvedor"></option>
+                        <option value="Professor"></option>
+                    </datalist>
+                </p>
+
+                <p><label for="textarea">Mensagem:</label></p>
+                <p><textarea name="textarea" id="textarea" cols="30" rows="10"></textarea></p>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy andersonRoldão</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
