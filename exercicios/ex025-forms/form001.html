@@ -6,28 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
-        * {
-            text-decoration: none;
+        body {
+            background-color: rgb(55, 111, 196);
             font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            color: black;
+            width: 40vw;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
+        }
+
+        fieldset {
+            margin: 2px 2px 10px 2px;
+        }
+
+        div {
+            margin: 10px 0 10px 10px;
+        }
+
+        footer {
+            font-style: italic;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Meu primeiro Formulário</h1>
-    <form action="">
-        <!-- Label serve para a área de click do formulário abranger a caixa e o texto -->
-        <p><label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome">
-        </p>
+    <header>
+        <h1>Meu primeiro Formulário</h1>
+    </header>
 
-        <p><label for="isobrenome">Sobrenome:</label>
-            <input type="text" name="lastname" id="isobrenome">
-        </p>
-
-        <p>
-            <input type="submit" name="submit" id="isubmit" onclick="enviar()">
-        </p>
-    </form>
+    <section>
+        <form action="">
+            <!-- Label serve para a área de click do formulário abranger a caixa e o texto -->
+            <div><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </div>
+            <div><label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="lastname" id="isobrenome">
+            </div>
+            <div>
+                <input type="submit" name="submit" id="isubmit" onclick="enviar()">
+            </div>
+        </form>
+    </section>
 
     <script>
         function enviar(params) {
