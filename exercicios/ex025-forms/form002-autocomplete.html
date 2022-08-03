@@ -5,25 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body {
+            background-color: rgb(55, 111, 196);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            color: black;
+            width: 55vw;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
+        }
+
+        fieldset {
+            margin: 2px 2px 10px 2px;
+        }
+
+        div {
+            margin: 10px 0 10px 10px;
+        }
+
+        footer {
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Formulário</h1>
-    <form autocomplete="on">
-        <p>
-            <label for="nome">Usuário: </label>
-            <input type="text" name="usuario" id="usuario" placeholder="Nome de usuário" required
-                autocomplete="username" size="20" minlength="5" maxlength="40">
-        </p>
-        <p>
-            <label for="senha">Senha: </label>
-            <input type="password" name="senha" id="senha" placeholder="Mínimo 8 caracteres" required
-                autocomplete="current-password" size="15" minlength="8" maxlength="16">
-        </p>
-        <p>
-            <input type="submit" value="Enviar" onclick="enviar()">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    
+    <section>
+        <form autocomplete="on">
+            <div>
+                <label for="nome">Usuário: </label>
+                <input type="text" name="usuario" id="usuario" placeholder="Nome de usuário" required
+                    autocomplete="username" size="20" minlength="5" maxlength="40">
+            </div>
+            <div>
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha" placeholder="Mínimo 8 caracteres" required
+                    autocomplete="current-password" size="15" minlength="8" maxlength="16">
+            </div>
+            <div>
+                <input type="submit" value="Enviar" onclick="enviar()">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </section>
 
     <script>
         let usuario = document.getElementById('usuario')
