@@ -159,7 +159,7 @@ div.video {
     position: relative;
 }
 
-div.video > iframe {
+div.video>iframe {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -179,7 +179,7 @@ aside {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.282);
 }
 
-aside > h3 {
+aside>h3 {
     background-color: var(--cor4);
     color: white;
     padding: 10px;
@@ -187,7 +187,7 @@ aside > h3 {
     border-radius: 10px 10px 0 0;
 }
 
-aside > ul {
+aside>ul {
     list-style-type: '\2714\00a0\00a0';
     list-style-position: inside;
     columns: 2;
