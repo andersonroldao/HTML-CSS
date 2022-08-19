@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../image/pikachu-paisagem.png);
+    background-position: center bottom;
+    background-size: 65vw;
+}
