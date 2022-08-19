@@ -1,8 +1,0 @@
-@charset "UTF-8";
-
-body {
-    background-image: url(image/pikachu-retrato.png);
-    background-position: center bottom;
-    background-color: rgba(231, 191, 14, 0.534);
-    background-size: 90vw;
-}
