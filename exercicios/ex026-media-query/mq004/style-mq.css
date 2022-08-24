@@ -1,2 +1,133 @@
 @charset "UTF-8";
 
+/* Outras Mídias */
+
+/* Typical Device Breakpoints W3C
+
+Extra small devices (phones, max-width: 600px)
+Small devices (portrait tablets and large phones, min-width: 600px)
+Medium devices (landscape tablets, min-width: 768px)
+Large devices (laptops/desktops, min-width: 992px)
+Extra large devices (large laptops and desktops, min-width: 1200px) */
+
+
+/* Impressoras */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        color: black;
+        text-shadow: none;
+        font-size: 2.1em;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#phone,
+    #tablet,
+    #pc,
+    #tv {
+        display: none;
+    }
+}
+
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../image/back-tablet.jpg);
+    }
+
+    main {
+        width: 360px;
+    }
+
+    main h1 {
+        font-size: 2.9em;
+    }
+
+    main img {
+        width: 240px;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#phone,
+    #print,
+    #pc,
+    #tv {
+        display: none;
+    }
+}
+
+
+/* Laptops/Desktops */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-image: url(../image/back-pc.jpg);
+    }
+
+    main {
+        width: 430px;
+    }
+
+    main h1 {
+        font-size: 3.5em;
+    }
+
+    main img {
+        width: 290px;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#phone,
+    #tablet,
+    #print,
+    #tv {
+        display: none;
+    }
+}
+
+
+/* Telas Grandes */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../image/back-tv.jpg);
+    }
+
+    main {
+        width: 520px;
+    }
+
+    main h1 {
+        font-size: 4.2em;
+    }
+
+    main img {
+        width: 350px;
+    }
+
+    img#tv {
+        display: block;
+    }
+
+    img#phone,
+    #tablet,
+    #print,
+    #pc {
+        display: none;
+    }
+}
