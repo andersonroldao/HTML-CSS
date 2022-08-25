@@ -22,9 +22,19 @@ header h1 {
     text-align: center;
 }
 
-menu li {
-    background-color: lightblue;
-    text-align: center;
+header i.material-icons {
+    display: block;
+    padding: 5px;
+    text-indent: 15px;
+}
+
+header i.material-icons:hover {
+    background-color: rgba(255, 255, 255, 0.897);
+    cursor: pointer;
+}
+
+menu {
+    display: none;
 }
 
 menu a {
@@ -32,6 +42,7 @@ menu a {
     background-color: rgba(255, 255, 255, 0.199);
     padding: 10px;
     color: white;
+    text-indent: 25px;
     text-decoration: none;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
     border-top: 2px solid rgb(150, 187, 199);
