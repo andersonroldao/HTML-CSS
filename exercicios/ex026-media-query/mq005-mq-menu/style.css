@@ -17,20 +17,22 @@ header {
 }
 
 header h1 {
-    padding: 15px;
+    padding: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.384);
     text-align: center;
 }
 
 header i.material-icons {
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
     display: block;
-    padding: 5px;
-    text-indent: 15px;
+    padding: 8px 20px 8px 20px;
+    cursor: pointer;
 }
 
 header i.material-icons:hover {
-    background-color: rgba(255, 255, 255, 0.897);
-    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.849);
+    color: black;
 }
 
 menu {
@@ -39,17 +41,17 @@ menu {
 
 menu a {
     display: block;
-    background-color: rgba(255, 255, 255, 0.199);
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.856);
+    padding: 10px 0 10px 30px;
     color: white;
-    text-indent: 25px;
     text-decoration: none;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
     border-top: 2px solid rgb(150, 187, 199);
 }
 
 menu a:hover {
-    background-color: rgb(138, 174, 185);
+    background-color: rgba(255, 255, 255, 0.849);
+    color: black;
 }
 
 main {
@@ -72,8 +74,8 @@ main h2 {
 
 main p {
     margin-bottom: 10px;
-    text-indent: 3ch;
     text-align: justify;
+    text-indent: 1em;
 }
 
 footer p {
