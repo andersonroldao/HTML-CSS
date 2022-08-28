@@ -59,7 +59,7 @@
 }
 
 /* Telas Grandes */
-@media screen and (min-width: 1200px) and (max-width:1920px) {
+@media screen and (min-width: 1200px) and (max-width:2560px) {
     header i.material-icons {
         display: none;
     }
@@ -82,8 +82,9 @@
 }
 
 /* Telas 2k+ */
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 2560px) {
     header h1 {
+        padding: 30px;
         font-size: 3em;
     }
 
@@ -100,12 +101,17 @@
     }
 
     menu a {
-        padding: 10px 20px 10px 20px;
+        padding: 15px 30px 15px 30px;
         font-size: 1.5em;
     }
 
     main {
+        padding: 5px;
         width: 1050px;
+    }
+
+    main article {
+        padding: 22.5px;
     }
 
     main article h2 {
@@ -113,6 +119,11 @@
     }
 
     main article p {
+        padding: 2.25px;
+        font-size: 1.5em;
+    }
+
+    footer p {
         font-size: 1.5em;
     }
 }
