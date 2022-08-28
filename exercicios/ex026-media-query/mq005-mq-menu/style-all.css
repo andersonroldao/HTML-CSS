@@ -14,10 +14,6 @@
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    main {
-        width: 690px;
-    }
-
     header i.material-icons {
         display: none;
     }
@@ -32,15 +28,15 @@
 
     header a {
         padding: 10px 20px 10px 20px;
+    }
+
+    main {
+        width: 690px;
     }
 }
 
 /* Laptops/Desktops */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    main {
-        width: 690px;
-    }
-
     header i.material-icons {
         display: none;
     }
@@ -55,28 +51,68 @@
 
     header a {
         padding: 10px 20px 10px 20px;
+    }
+
+    main {
+        width: 690px;
     }
 }
 
 /* Telas Grandes */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width:1920px) {
+    header i.material-icons {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    menu a {
+        padding: 10px 20px 10px 20px;
+    }
+
     main {
         width: 690px;
+    }
+}
+
+/* Telas 2k+ */
+@media screen and (min-width: 1920px) {
+    header h1 {
+        font-size: 3em;
     }
 
     header i.material-icons {
         display: none;
     }
 
-    header menu {
+    menu {
         display: block;
     }
 
-    header li {
+    menu li {
         display: inline-block;
     }
 
-    header a {
+    menu a {
         padding: 10px 20px 10px 20px;
+        font-size: 1.5em;
+    }
+
+    main {
+        width: 1050px;
+    }
+
+    main article h2 {
+        font-size: 2.25em;
+    }
+
+    main article p {
+        font-size: 1.5em;
     }
 }
